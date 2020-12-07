@@ -14,12 +14,12 @@ struct VivekDev: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
-    var name = "VivekDev"
-    var description = "A description of VivekDev"
+    var url = URL(string: "https://vivek.dev")!
+    var name = "Vivek Selvaraj"
+    var description = "Test Description"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try VivekDev().publish(withTheme: .foundation)
+try VivekselvarajGithubIo().publish(withTheme: .vannam)
