@@ -22,4 +22,7 @@ struct VivekDev: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try VivekselvarajGithubIo().publish(withTheme: .vannam)
+try VivekDev().publish(using: [
+                        .generateHTML(withTheme: .vannam),
+                        .deploy(using: .gitHub("vivekselvaraj/vivekselvaraj.github.io"))
+])

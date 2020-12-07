@@ -1,7 +1,7 @@
 /**
-*  Publish Foundation theme
-*  Copyright (c) John Sundell 2019
-*  MIT license, see LICENSE file for details
+*  Vannam Theme
+*  Copyright (c) Vivek Selvaraj 2020
+*
 */
 
 * {
@@ -83,7 +83,7 @@ a {
 .item-list > li {
     display: block;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #eee;
     margin-bottom: 20px;
 }
