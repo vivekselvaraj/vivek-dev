@@ -20,13 +20,9 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
             .lang(context.site.language),
             .head(for: index, on: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
                 .wrapper(
-                    .h1(.text(index.title)),
-                    .p(
-                        .class("description"),
-                        .text("This website is still under construction. Check back in a week or two.")
-                    ),
+                    .br(),
+                    .contentBody(index.content.body),
                     .h2("Recent Posts"),
                     .itemList(
                         for: context.allItems(
@@ -51,15 +47,15 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
             .head(for: item, on: context.site),
             .body(
                 .class("item-page"),
-                .header(for: context, selectedSection: item.sectionID),
                 .wrapper(
                     .article(
+                        .p(
+                            .a(.href("/"), .text("Vivek Selvaraj"))
+                        ),
                         .div(
                             .class("content"),
                             .contentBody(item.body)
-                        ),
-                        .span("Tagged with: "),
-                        .tagList(for: item, on: context.site)
+                        )
                     )
                 ),
                 .footer(for: context.site)
@@ -165,7 +161,6 @@ private extension Node where Context == HTML.BodyContext {
                         .href(item.path),
                         .text(item.title)
                     )),
-                    .tagList(for: item, on: site),
                     .p(.text(item.description))
                 ))
             }
@@ -188,12 +183,13 @@ private extension Node where Context == HTML.BodyContext {
                 .a(
                     .text("Publish"),
                     .href("https://github.com/johnsundell/publish")
+                ),
+                .br(),
+                .a(
+                    .text("RSS feed"),
+                    .href("/feed.rss")
                 )
-            ),
-            .p(.a(
-                .text("RSS feed"),
-                .href("/feed.rss")
-            ))
+            )
         )
     }
 }

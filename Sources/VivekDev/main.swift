@@ -1,3 +1,4 @@
+import CNAMEPublishPlugin
 import Foundation
 import Publish
 import Plot
@@ -22,4 +23,8 @@ struct VivekDev: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try VivekDev().publish(withTheme: .vannam)
+try VivekDev().publish(withTheme: .vannam, additionalSteps: [.installPlugin(
+    .generateCNAME(with: "vivek.dev", "www.vivek.dev")),
+    .deploy(using: .gitHub("vivekselvaraj/vivekselvaraj.github.io", useSSH: false))
+])
+
