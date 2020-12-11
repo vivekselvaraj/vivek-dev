@@ -1,5 +1,6 @@
 # Hello 👋, I'm **Vivek Selvaraj**
-
-*(This website is still under construction, check back in a week or two)*
-
-I'm a software developer based out of Coimbatore, India. I've been writing web applications with Java for the past 3 years.
+<br />
+<br />
+<br />
+I'm a software developer based out of Coimbatore, India.
+I have 3 years of experience with Java building enterprise web applications, I can *tame* JavaScript and recently started exploring Swift and SwiftUI

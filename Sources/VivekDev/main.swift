@@ -16,8 +16,9 @@ struct VivekDev: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://vivek.dev")!
+    var title = "Vivek Selvaraj"
     var name = "Vivek Selvaraj"
-    var description = "Test Description"
+    var description = "Software Devleoper"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }

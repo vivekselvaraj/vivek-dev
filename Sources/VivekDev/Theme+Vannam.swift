@@ -5,6 +5,7 @@
 //  Created by Vivek Selvaraj on 06/12/20.
 //
 
+import Foundation
 import Plot
 import Publish
 
@@ -21,9 +22,9 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
             .head(for: index, on: context.site),
             .body(
                 .wrapper(
-                    .br(),
                     .contentBody(index.content.body),
-                    .h2("Recent Posts"),
+                    .br(),
+                    .h2("Posts"),
                     .itemList(
                         for: context.allItems(
                             sortedBy: \.date,
@@ -49,7 +50,8 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
                 .class("item-page"),
                 .wrapper(
                     .article(
-                        .p(
+                        .h1(.text(item.title)),
+                        .p( .text("by "),
                             .a(.href("/"), .text("Vivek Selvaraj"))
                         ),
                         .div(
@@ -123,6 +125,14 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
         )
     }
     
+    static func dateFormatter(with format: String) -> DateFormatter {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone(identifier: "Europe/Berlin")
+        formatter.locale = Locale(identifier: "en-US")
+        formatter.dateFormat = format
+        return formatter
+    }
+    var textualDateFormatter = dateFormatter(with: "MMMM d, yyyy")
 
 }
 
@@ -179,7 +189,7 @@ private extension Node where Context == HTML.BodyContext {
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
             .p(
-                .text("Generated using "),
+                .text("Handcrafted in Coimbatore with "),
                 .a(
                     .text("Publish"),
                     .href("https://github.com/johnsundell/publish")
