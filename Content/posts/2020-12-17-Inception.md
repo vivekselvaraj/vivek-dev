@@ -1,17 +1,27 @@
 ---
 title: Inception
 date: 2020-12-17 22:58
-description: Where it all started
+description: Where it all began
 tags: article, journal
 ---
-I’ve been a long time listener of the [Stacktrace](https://podcasts.apple.com/us/podcast/stacktrace/id1359435443?mt=2) podcast by [John Sundell](https://twitter.com/johnsundell) and [Gui Rambo.](https://twitter.com/_inside) I did not know Swift, yet I was always interested in their projects and what they had in plate for the week. The podcast is not Swift oriented but they normally work on Swift projects. This is where I came to know about [Publish.](https://github.com/JohnSundell/Publish)
 
-I first heard about Publish, earlier this year when John was talking about this precious little project and how he is going to make it open source eventually. It is a static site generator built with Swift for Swift developers. At that time I was still jumping from tutorial to tutorial on learning Swift and iOS development. 
-I got inspired with his JavaScript free website, [Swift by Sundell.](https://www.swiftbysundell.com) In a world where all the JavaScript UI libraries were making noise, his website was attracting traffic without a single line of JavaScript code. I was impressed with how fast his website load time is and the fact that every single page on his website is generated using Publish. 
+## Stacktrace 
 
-I’ve always had this idea of writing and publishing blog posts like every other “influencer” developers do. But never had the spark or the confidence to actually write one. A recent [tweet](https://twitter.com/twostraws/status/1330559062803673088) by Paul Hudson was the final catalyst that pushed me to do it.
+I’ve been a long time listener of the [Stacktrace](https://podcasts.apple.com/us/podcast/stacktrace/id1359435443?mt=2) podcast by [John Sundell](https://twitter.com/johnsundell) and [Gui Rambo](https://twitter.com/_inside). It's a podcast where they talk about Apple and what projects they are working on. Which are predominantly iOS and Swift projects. And I don't know Swift. 
 
-Now that I've decided to write, I did not want to associate myself with blogging sites like Medium or Blogspot. *I wanted a simple tool to write like a pencil.* I decided to generate my site using Publish. Publish was in Swift. With the limited Swift knowledge I gained through the first 12 days of [100 Days of SwiftUI,](https://www.hackingwithswift.com/100/swiftui) I was able to understand how to work with Publish and customise it to my needs.
+I started listening to Stacktrace when it used to be a podcast where they discuss Apple's leaks, news and rumours from a developer's perspective. I got hooked immediately. Overtime, it evolved into a podcast where they discuss Apple, Swift, their projects and indie development. This is where I first heard about [Publish](https://github.com/JohnSundell/Publish).
 
-Welcome to [vivek.dev](vivek.dev) 🙏
+## Publish
+
+It was late last year, when John was talking about his precious little project and how he is going to make it open source eventually. It's a static site generator built with Swift for Swift developers. It was also the time where I was jumping from tutorial to tutorial trying to learn Swift and iOS development.
+
+He had built his website [Swift by Sundell](https://www.swiftbysundell.com) using Publish. No JavaScript. Just pure HTML and CSS. That site was blazingly fast. The load time was almost instant. Then I decided. If I ever launch a website, I'll have it JavaScript free.
+
+## Catalyst
+
+The time has come. I have decided to generate my site using Publish. With the limited knowledge of Swift that I had gained through the first 12 days of [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui), I was able to create a starter website, and customize it to my needs.
+
+I've always wanted to try my hand at blogging, but I never thought I was good enough to write. A recent [tweet](https://twitter.com/twostraws/status/1330559062803673088) by Paul Hudson (the guy behind 100 Days of SwiftUI) was the catalyst that pushed me to do it.
+
+Welcome to [vivek.dev](/) 🙏
 
