@@ -17,24 +17,25 @@ With some preliminary google search, <code>pkill</code> looked promising. It can
 
 Since no built in commands in Linux had the ability to recursively kill the subprocesses of a parent process, I decided to write a shell script of my own. You might think that I could have killed by the process' group ID. In my particular case, the target process itself was spawned by another process. This made the target process and all its subprocesses to take up the parent's process ID as their group ID
 
-<code>
-<pre>
+```bash
 #!/bin/sh
 
-#Check if arguments are present
+# Check if arguments are present
 if [[ -z "$1" ]]; then
   echo "Error: Please enter a Process ID to kill" >&2
   exit 1
 fi
 
-#Check if the argument is an integer
+# Check if the argument is an integer
 REGEX='^[0-9]+$'
 if [[ $1 =~ $REGEX ]]; then
-  echo "Error: Process ID is not a number. Please enter an integer for Process ID" >&2
+  echo "Error: Process ID is not a number" >&2
+  echo "Please enter an integer for Process ID" >&2
   exit 1
 fi
 
-#Function which prints the child processes of a process with pgrep command - Recursively
+# Prints the child processes of a process with
+# pgrep command - Recursively
 findChildProcesses()
 {
   CHILDREN=$(pgrep -P $1)
@@ -47,10 +48,9 @@ findChildProcesses()
   done
 }
 
-#Command to kill all the processes listed by the above function
+# Command to kill all the processes listed by the above function
 kill -9 $1 `findChildProcesses $1`
-</pre>
-</code>
+```
 
 I sought the help of the <code>pgrep</code> command to find the child processes under a process.
 
