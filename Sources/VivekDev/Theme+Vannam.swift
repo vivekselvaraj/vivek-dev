@@ -19,7 +19,7 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
     func makeIndexHTML(for index: Index, context: PublishingContext<Site>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: index, on: context.site),
+            .head(for: index, on: context.site, titleSeparator: " / "),
             .body(
                 .wrapper(
                     .contentBody(index.content.body),
