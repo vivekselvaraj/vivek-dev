@@ -199,10 +199,6 @@ private extension Node where Context == HTML.BodyContext {
                 .a(
                     .text("RSS feed"),
                     .href("/feed.rss")
-                ),
-                .a(
-                    .text("RSS feed"),
-                    .href("/feed.rss")
                 )
             )
         )
