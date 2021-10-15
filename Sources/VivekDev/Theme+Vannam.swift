@@ -54,6 +54,7 @@ private struct VannamHTMLFactory<Site: Website>: HTMLFactory {
                         .p( .text("by "),
                             .a(.href("/"), .text("Vivek Selvaraj"))
                         ),
+                        .hr(),
                         .div(
                             .class("content"),
                             .contentBody(item.body)
@@ -195,6 +196,10 @@ private extension Node where Context == HTML.BodyContext {
                     .href("https://github.com/johnsundell/publish")
                 ),
                 .br(),
+                .a(
+                    .text("RSS feed"),
+                    .href("/feed.rss")
+                ),
                 .a(
                     .text("RSS feed"),
                     .href("/feed.rss")

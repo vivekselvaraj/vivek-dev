@@ -7,15 +7,13 @@ tags: article, journal
 
 ## Stacktrace 
 
-I’ve been a long time listener of the [Stacktrace](https://podcasts.apple.com/us/podcast/stacktrace/id1359435443?mt=2) podcast by [John Sundell](https://twitter.com/johnsundell) and [Gui Rambo](https://twitter.com/_inside). It's a podcast where they talk about Apple and what projects they are working on. Which are predominantly iOS and Swift projects. And I don't know Swift. 
-
-I started listening to Stacktrace when it used to be a podcast where they discuss Apple's leaks, news and rumours from a developer's perspective. I got hooked immediately. Overtime, it evolved into a podcast where they discuss Apple, Swift, their projects and indie development. This is where I first heard about [Publish](https://github.com/JohnSundell/Publish).
+I’ve been an active listener of the [Stacktrace](https://podcasts.apple.com/us/podcast/stacktrace/id1359435443?mt=2) podcast by [John Sundell](https://twitter.com/johnsundell) and [Gui Rambo](https://twitter.com/_inside). Being a long time Apple follower, I got hooked immediately. This is where I first heard about [Publish](https://github.com/JohnSundell/Publish).
 
 ## Publish
 
-It was late last year, when John was talking about his precious little project and how he is going to make it open source eventually. It's a static site generator built with Swift for Swift developers. It was also the time where I was jumping from tutorial to tutorial trying to learn Swift and iOS development.
+It was late last year, when John was talking about his precious little project and how he is going to make it open source eventually. It was a static site generator built with Swift for Swift developers.
 
-He had built his website [Swift by Sundell](https://www.swiftbysundell.com) using Publish. No JavaScript. Just pure HTML and CSS. That site was blazingly fast. The load time was almost instant. Then I decided. If I ever launch a website, I'll have it JavaScript free.
+He had built his website [Swift by Sundell](https://www.swiftbysundell.com) using Publish. No JavaScript. Just pure HTML and CSS. The site was blazingly fast. The load time was almost instant. Then I decided. If I ever launch a website, I'll have it JavaScript free. And here we are.
 
 ## Catalyst
 
