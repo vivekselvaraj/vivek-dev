@@ -1,7 +1,10 @@
 import CNAMEPublishPlugin
+import DarkImagePublishPlugin
 import Foundation
+import MinifyCSSPublishPlugin
 import Publish
 import Plot
+import SwiftPygmentsPublishPlugin
 
 // This type acts as the configuration for your website.
 struct VivekDev: Website {
@@ -16,16 +19,25 @@ struct VivekDev: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://vivek.dev")!
-    var title = "Vivek Selvaraj"
+    var title = "Vivek"
     var name = "Vivek Selvaraj"
-    var description = "Software Devleoper"
+    var description = "Software Developer"
     var language: Language { .english }
     var imagePath: Path? { nil }
+//    var favicon: Favicon? { .init(path: Path("images/favicon.ico"), type: "image/x-icon")}
 }
 
-// This will generate your website using the built-in Foundation theme:
-try VivekDev().publish(withTheme: .vannam, additionalSteps: [.installPlugin(
-    .generateCNAME(with: "vivek.dev", "www.vivek.dev")),
-    .deploy(using: .gitHub("vivekselvaraj/vivekselvaraj.github.io", useSSH: false))
+
+try VivekDev().publish(using: [
+    .copyResources(),
+    .installPlugin(.generateCNAME(with: "vivek.dev", "www.vivek.dev")),
+    .installPlugin(.darkImage()),
+    .installPlugin(.pygments()),
+    .addMarkdownFiles(),
+    .generateHTML(withTheme: .vannam),
+    .installPlugin(.minifyCSS()),
+    .generateRSSFeed(including: Set(VivekDev.SectionID.allCases)),
+    .generateSiteMap(),
+    .deploy(using: .gitHub("vivekselvaraj/vivekselvaraj.github.io"))
 ])
 
