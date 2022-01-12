@@ -35,7 +35,7 @@ try VivekDev().publish(using: [
     .installPlugin(.pygments()),
     .addMarkdownFiles(),
     .generateHTML(withTheme: .vannam),
-    .installPlugin(.minifyCSS()),
+//    .installPlugin(.minifyCSS()),
     .generateRSSFeed(including: Set(VivekDev.SectionID.allCases)),
     .generateSiteMap(),
     .deploy(using: .gitHub("vivekselvaraj/vivekselvaraj.github.io"))
