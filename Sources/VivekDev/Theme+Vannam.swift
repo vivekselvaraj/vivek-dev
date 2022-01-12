@@ -190,11 +190,7 @@ private extension Node where Context == HTML.BodyContext {
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
             .p(
-                .text("Handcrafted in Coimbatore with "),
-                .a(
-                    .text("Publish"),
-                    .href("https://github.com/johnsundell/publish")
-                ),
+                .text("Handcrafted in Coimbatore"),
                 .br(),
                 .a(
                     .text("RSS feed"),
