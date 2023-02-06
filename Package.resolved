@@ -111,9 +111,9 @@
       },
       {
         "package": "SwiftPygmentsPublishPlugin",
-        "repositoryURL": "https://github.com/Ze0nC/SwiftPygmentsPublishPlugin",
+        "repositoryURL": "https://github.com/vivekselvaraj/SwiftPygmentsPublishPlugin",
         "state": {
-          "branch": "master",
+          "branch": "stable",
           "revision": "9280f5d55a4a7600cef2e08078ec456ab345904c",
           "version": null
         }

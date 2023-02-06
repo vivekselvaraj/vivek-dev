@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -13,7 +13,7 @@ let package = Package(
     dependencies: [
         .package(name: "Publish", url: "https://github.com/johnsundell/publish.git", from: "0.6.0"),
         .package(url: "https://github.com/SwiftyGuerrero/CNAMEPublishPlugin", from: "0.1.0"),
-        .package(url: "https://github.com/Ze0nC/SwiftPygmentsPublishPlugin", .branch("master")),
+        .package(url: "https://github.com/vivekselvaraj/SwiftPygmentsPublishPlugin", .branch("stable")),
         .package(name: "DarkImagePublishPlugin", url: "https://github.com/insidegui/DarkImagePublishPlugin", from: "0.1.0"),
         .package(name: "MinifyCSSPublishPlugin", url: "https://github.com/labradon/minifycsspublishplugin", from: "0.1.0")
     ],
