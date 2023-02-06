@@ -5,5 +5,6 @@ title: Home
 <br />
 <br />
 <br />
-I'm a software developer based out of Coimbatore, India.
-I have 3 years of experience with Java building enterprise web applications, I can *tame* JavaScript and recently started exploring Swift and SwiftUI.
+I'm a graduate student at the <mark>University of Michigan</mark> pursuing my Master's in <mark>UX Reseach and Design.</mark> 
+
+Previously a full stack web developer at Oracle for 4 years.
